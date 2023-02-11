@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital@1&display=swap');*{
+  
+  font-family: 'Poppins', sans-serif;
+}
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+   
+  li{
+    list-style:none;
+  }
+  
+  /*header section*/
+  .header{
+    width: 80%;
+    margin: 100px auto;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .container img{
+    width: 100%;
+  }
+  
+  .container div h3{
+    font-size: 70px;
+  }
+  
+  .container div h3::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 130px;
+    top: 51%;
+    left: 15%;
+  }
+  
+  .container div p{
+    margin: 20px 0;
+  }
+
+.menu{
+  font-size: 3rem;
+  display: none;
+}
+
+html{
+  font-size: 62;
+}
+
+:root{
+  --main-color: #0eaee8;
+  --main-heading:5rem;
+  --second-heading:4rem;
+  --third-heading:2.4rem;
+  --text-font:1.5rem;
+  --padding: 2% 7%;
+
+}
+
+.header{
+  padding: var(--padding);
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+}
+
+/* Nav bar section */
+.navbar{
+  width:100%;
+  margin: 11.5px;
+}
+
+.nav-container{
+  padding: rem 0;
+}
+
+.nav-container h2{
+  color:rgb(29, 29, 29);
+}
+
+.nav-container .nav{
+  justify-self: flex-end;
+}
+
+.nav-container .nav {
+  display: flex;
+}
+
+.nav-container .nav a{
+  margin: 0 20px;
+  color: black;
+}
+
+.nav-container .nav .active{
+  background: rgb(237, 34, 3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.menu{
+  font-size: 3rem;
+  display: none;
+}
+
+/* header section*/
+.home{
+  padding: var(--padding);
+  padding-top: 7rem;
+
+}
+.home-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.home-text{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-text h1{
+  font-size: var(--main-heading);
+  color: var(--main-color);
+
+}
+
+.home-text h4{
+  font-size: 2rem;
+}
+
+.home-text h3{
+  font-size: var(--third-heading);
+}
+
+.home-text p{
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+/*cv button section*/
+
+.home-btn{
+  text-decoration: none;
+  color: black;
+  font-size: var(--text-font);
+  padding: 1rem 2rem;
+  outline: 1px solid var(--main-color);
+  width: 30%;
+  margin-top: 2rem;
+  position: relative;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.home-btn::before{
+  background: var(--main-color);
+  content: '';
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.home-btn::hover:before{
+  width: 100%;
+}
+
+section {
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 5em;
+  margin-bottom: 50px;
+}
+
+section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section li {
+  margin-bottom: 20px;
+}
+
+section h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+/* image section*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+#contact {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: inline-block;
+  text-align: left;
+}
+
+#contact label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  font-size: 1.2em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+
